@@ -94,7 +94,7 @@ export let getRandomGame = async (branchName) => {
         new envParams().DOMAIN + '/api/v1/random/?branch=' + branchName,
         {
             headers: {
-                'Access-Control-Allow-Origin' : 'https://rezone-random.ru/'
+                'Access-Control-Allow-Origin' : 'http://srv-captain--rezone-random/'
             }
         }
         );
