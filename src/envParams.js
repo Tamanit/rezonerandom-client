@@ -2,6 +2,6 @@ export class envParams {
     DOMAIN;
 
     constructor() {
-        this.DOMAIN = "http://srv-captain--rezone-server";
+        this.DOMAIN = "https://srv-captain--rezone-random";
     }
 }
