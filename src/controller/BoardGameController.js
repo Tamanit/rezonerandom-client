@@ -90,6 +90,13 @@ export let getRandomGame = async (branchName) => {
     console.log(branchName);
     branchName = branchName === undefined ? '' : branchName;
     console.log(branchName);
-    const response = await axios.get(new envParams().DOMAIN + '/api/v1/random/?branch=' + branchName);
+    const response = await axios.get(
+        new envParams().DOMAIN + '/api/v1/random/?branch=' + branchName,
+        {
+            headers: {
+                'Access-Control-Allow-Origin' : 'https://rezone-random.ru/'
+            }
+        }
+        );
     return response.data;
 }
